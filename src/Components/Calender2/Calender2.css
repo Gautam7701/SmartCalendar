@@ -1,0 +1,262 @@
+/* Calendar.css
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  
+  .calendar-header button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  .calendar-body {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+    width: 60%;
+  }
+  
+  .calendar-day {
+    padding: 10px;
+    background-color: #f0f0f0;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .calendar-day.today {
+    background-color: #3f72af;
+    color: white;
+  }
+  
+  .holiday-mark {
+    font-size: 14px;
+    color: red;
+  }
+  
+  .calendar-details {
+    width: 35%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .calendar-details img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+  .calendar-details h3 {
+    font-size: 22px;
+  }
+  
+  .calendar-details p {
+    font-size: 18px;
+  }
+   */
+
+
+   body {
+    font-family: "Arial", sans-serif;
+    background-color: #b0b0b0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* width: 100%; */
+  }
+  
+  .calendar-container {
+    display: flex;
+    width: 900px;
+  }
+  
+  .calendar {
+    /* flex: 1; */
+    width: 100%;
+    background-color: #202124;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 3px solid white;
+    padding: 8px;
+  }
+  
+  .header button {
+    background: none;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: red;
+  }
+  
+  .header button:hover {
+    background-color: #3c4043;
+  }
+  
+  .weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    font-weight: bold;
+    color: #b0b0b0;
+  }
+ 
+  .days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 3px;
+    margin-top: 10px;
+  }
+  
+  .day-container {
+    position: relative;
+  }
+  
+  .day {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .day.filled {
+    background-color: #303134;
+    color: #e8eaed;
+    /* color: purple; */
+  }
+  
+  .day.empty {
+    background-color: transparent;
+  }
+  
+  .day-details img {
+    width: 100%;
+    max-height: 200px; /* Set a consistent height */
+    object-fit: cover; /* Ensures images scale proportionally */
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  .day.event-day {
+    /* background-color: #ff6363; */
+    color: white;
+    /* background-color: #FF4D4D; */
+    /* padding: 11px; */
+    /* border-radius: 50%; */
+  }
+  
+  .day.today {
+    background-color: red;
+    color: #ffffff;
+  }
+  
+
+  .day-container .day:hover {
+    background-color: #5c636a;
+    cursor: pointer;
+  }
+  .events {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 12px;
+    text-align: center;
+    overflow: auto;
+    background-color: red;
+  }
+  
+  .event {
+    background-color: #DA70D6;
+    color: #ffffff;
+    /* padding: 2px 5px; */
+    border-radius: 3px;
+  }
+  
+  .day-detail-container {
+    /* flex: 1; */
+    width: 60%;
+    padding: 20px;
+    background-color: #202124;
+    border-radius: 10px;
+    margin-left: 20px;
+  }
+  
+  .day-details h3 {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    border: 2px solid white;
+  }
+  
+  .day-details p {
+    font-size: 18px;
+    color: #b0b0b0;
+  }
+  
+  .day-details img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .empty {
+    opacity: 0.3;
+  }
+  .photo-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .month-photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+.red{
+  color: red;
+  font-size: 29px;
+}  
